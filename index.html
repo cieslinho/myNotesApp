@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2e1e5dd38.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>MyNotesApp</title>
+</head>
+
+<body>
+
+    <main>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav__navbar">
+                    <div class="nav__logo">
+                        <a href="#">
+                            <i class="fa-regular fa-note-sticky"></i> MyNotes
+                        </a>
+                    </div>
+                    <div class="nav__buttons">
+                        <button class="add">
+                            <i class="fa-solid fa-add">
+                            </i> Dodaj</button>
+                        <button class="clear">
+                            <i class="fa-solid fa-xmark"></i> Wyczyść
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="notes-boxes">
+                <div class="notes-box">
+                    <div class="top">
+                        <p class="note-title">Zakupy</p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="bottom">
+                        <p class="note-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
+                            accusantium
+                            omnis officiis, veritatis magni sunt ea ipsam et sequi, numquam nesciunt saepe voluptatibus
+                            nostrum sit quam natus non, totam magnam?</p>
+                    </div>
+                </div>
+                <div class="notes-box">
+                    <div class="top">
+                        <p class="note-title">Zakupy</p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="bottom">
+                        <p class="note-text">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="notes-box">
+                    <div class="top">
+                        <p class="note-title">Zakupy</p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="bottom">
+                        <p class="note-text">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="notes-box">
+                    <div class="top">
+                        <p class="note-title">Zakupy</p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="bottom">
+                        <p class="note-text">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="popup">
+            <h3>dodaj notatkę</h3>
+            <div class="top">
+                <label for="category">Wybierz kategorię</label>
+                <select id="category">
+                    <option value="0" disabled selected>- wybierz kategorię -</option>
+                    <option value="1">Zakupy</option>
+                    <option value="2">Praca</option>
+                    <option value="3">Inne</option>
+                </select>
+            </div>
+            <div class="bottom">
+                <label for="text">Wpisz treść notatki</label>
+                <textarea id="text" placeholder="Treść notatki..."></textarea>
+            </div>
+            <p class="error">Uzupełnij wszystkie pola</p>
+            <div class="popup__buttons">
+                <button class="save">
+                    <i class="fa-solid fa-save"></i>Zapisz
+                </button>
+                <button class="cancel">
+                    <i class="fa-solid fa-xmark"></i>Anuluj
+                </button>
+            </div>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
