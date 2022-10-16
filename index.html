@@ -37,10 +37,10 @@
         </nav>
         <div class="container">
             <div class="notes-boxes">
-                <div class="notes-box">
+                <!-- <div class="notes-box">
                     <div class="top">
                         <p class="note-title">Zakupy</p>
-                        <i class="fa-solid fa-xmark"></i>
+                        <i class="close-note fa-solid fa-xmark"></i>
                     </div>
                     <div class="bottom">
                         <p class="note-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
@@ -48,34 +48,7 @@
                             omnis officiis, veritatis magni sunt ea ipsam et sequi, numquam nesciunt saepe voluptatibus
                             nostrum sit quam natus non, totam magnam?</p>
                     </div>
-                </div>
-                <div class="notes-box">
-                    <div class="top">
-                        <p class="note-title">Zakupy</p>
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-                    <div class="bottom">
-                        <p class="note-text">Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-                <div class="notes-box">
-                    <div class="top">
-                        <p class="note-title">Zakupy</p>
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-                    <div class="bottom">
-                        <p class="note-text">Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-                <div class="notes-box">
-                    <div class="top">
-                        <p class="note-title">Zakupy</p>
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-                    <div class="bottom">
-                        <p class="note-text">Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -85,7 +58,7 @@
             <h3>dodaj notatkę</h3>
             <div class="top">
                 <label for="category">Wybierz kategorię</label>
-                <select id="category">
+                <select id="category" onchange="selectValue()">
                     <option value="0" disabled selected>- wybierz kategorię -</option>
                     <option value="1">Zakupy</option>
                     <option value="2">Praca</option>
@@ -109,7 +82,7 @@
 
 
     </main>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
